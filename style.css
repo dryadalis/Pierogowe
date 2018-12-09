@@ -1,0 +1,63 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+body {
+    position: relative;
+}
+
+.page--home {
+    background: url("images/vita-marija-murenaite-473165-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+.navbar {
+    padding-top: 8rem!important;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: .8rem !important;
+    padding-left: .8rem !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.page--home--header {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+}
+.page--home--header h3 {
+    margin-top: 3%;
+    font-size: 20px;
+}
+.page--home--dumplingImg{
+    width: 3%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+.page--home--header__readMore {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.page--home--dumplingImg {
+    transform-origin: 50% 50%;
+    animation: jump .6s linear alternate infinite;
+    cursor: pointer;
+}
+@keyframes jump {
+    0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+    40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+    100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
